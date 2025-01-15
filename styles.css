@@ -25,7 +25,7 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1; 
-    mask-image: url(./Group.svg);
+    mask-image: url(./mask-group.svg);
     mask-size: 100vw;
     mask-repeat: no-repeat;
 }
