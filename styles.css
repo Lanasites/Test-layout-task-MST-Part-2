@@ -10,6 +10,7 @@ body {
     font-size: 6vw;
     color: white;
     overflow: hidden; 
+    background-color: black;
 }
 .container {
     position: relative;
@@ -24,13 +25,16 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1; 
+    mask-image: url(./Group.svg);
+    mask-size: 100vw;
+    mask-repeat: no-repeat;
 }
 .text {
+    padding-top: 2vw;
     position: absolute;
     inset: 0;
     z-index: 1; 
-    text-align: justify;
-    background-color:black; 
+    text-align: justify; 
     display: flex;
     flex-direction: column;
     gap: 2vw;
@@ -48,11 +52,5 @@ body {
     height: 6vw; 
     flex-grow: 1; 
     margin: 0 15px;
-    border: 2px solid white;
-    background: transparent;
-    clip-path: inset(0 0 0 0);
-    background-clip: content-box;
-    -webkit-mask-image: none;
-    mask-image: none;
 }
 
